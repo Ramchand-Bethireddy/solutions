@@ -1,0 +1,15 @@
+sum=0
+u=0
+i=int(input("Enter any 4 digit number"))
+while(i>0):
+    r=i%10
+    sum=sum+r
+    i=int(i/10)
+if(sum<9):
+    print(sum)
+else:
+    while(sum>0):  
+        k=sum%10
+        u=u+k
+        sum=int(sum/10)
+    print(u)
